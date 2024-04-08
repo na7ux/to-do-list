@@ -3,24 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/css/main.css">
     <title>CheckNDone</title>
 </head>
 <body>
     <header>
-        <img src="./static/img/to-do-list.png" alt="logo">
-        <h1>CheckNDone</h1>
-    </header>
-    <div>
-        <h2>My To-Do List</h2>
         <div>
+            <img src="./static/img/to-do-list.png" alt="logo">
+        </div>
+        <div>
+            <h1>CheckNDone</h1>
+        </div>
+    </header>
+    <div class="container">
+        <div class="actions"><!-- Actions -->
             <input type="button" value="Add Task">
             <input type="button" value="Modify Task">
             <input type="button" value="Delete Task">
         </div>
-        <div>
+        <div class="main"><!-- Main body -->
             <h3>TODAY</h3>
             <p>April 7th 2024</p>
-            <ul>
+            <ul><!-- List of Tasks -->
                 <li>Task1<input type="checkbox" name="task1" id="task1"></li>
                 <li>Task2<input type="checkbox" name="task2" id="task2"></li>
                 <li>Task3<input type="checkbox" name="task3" id="task3"></li>
@@ -30,5 +34,10 @@
             </ul>
         </div>
     </div>
+    <footer>
+        <div>
+            Designed By Na7uX | All rights reserved | Argentina 2024
+        </div>
+    </footer>
 </body>
 </html>
