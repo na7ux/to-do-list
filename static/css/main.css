@@ -1,6 +1,7 @@
 header{
     align-items: center;
     display: flex;
+    justify-content: space-between;
 }
 
 header img{
@@ -11,6 +12,22 @@ header h1{
     font-size: 10vh;
 }
 
+.nav ul{
+    list-style-type: none;
+    margin: 5px;
+    padding: 0;
+    overflow: hidden;
+}
+
+.nav ul li {
+    float: left;
+}
+.nav ul li a{
+    display: block;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+}
 .container{
     display:flex;
     justify-content: space-evenly;
@@ -18,7 +35,7 @@ header h1{
 }
 
 .actions{
-    display:flex;
+    display: flex;
     flex-direction: column;
 }
 
@@ -28,17 +45,18 @@ header h1{
 }
 
 .main{
+    display: list-item;
     width: 100%;
     height: 50vh;
-    align-items: center;
-    justify-items: stretch;
+    align-content: center;
     text-align: center;
     border-style: solid;
     background-color:darkturquoise;
+    overflow-y: scroll;
 }
 
 .main h3{
-    margin: 0;
+    margin: 5px;
 }
 
 .main p{
@@ -52,6 +70,10 @@ header h1{
 
 .main ul li{
     padding: 1vh;
+}
+
+.main ul li input{
+    justify-self: right;
 }
 
 footer{
